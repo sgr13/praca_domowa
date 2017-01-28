@@ -1,0 +1,213 @@
+body
+{
+    margin: 0px !important;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d8e0de+0,aebfbc+22,99afab+33,8ea6a2+50,829d98+67,4e5c5a+82,0e0e0e+100;Grey+3D */
+    background: rgb(216,224,222); /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, rgba(216,224,222,1) 0%, rgba(174,191,188,1) 22%, rgba(153,175,171,1) 33%, rgba(142,166,162,1) 50%, rgba(130,157,152,1) 67%, rgba(78,92,90,1) 82%, rgba(14,14,14,1) 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(216,224,222,1) 0%,rgba(174,191,188,1) 22%,rgba(153,175,171,1) 33%,rgba(142,166,162,1) 50%,rgba(130,157,152,1) 67%,rgba(78,92,90,1) 82%,rgba(14,14,14,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, rgba(216,224,222,1) 0%,rgba(174,191,188,1) 22%,rgba(153,175,171,1) 33%,rgba(142,166,162,1) 50%,rgba(130,157,152,1) 67%,rgba(78,92,90,1) 82%,rgba(14,14,14,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d8e0de', endColorstr='#0e0e0e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+#container
+{
+/*     Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b3dced+0,29b8e5+50,bce0ee+100;Blue+Pipe 
+    background: #b3dced;  Old browsers 
+    background: -moz-radial-gradient(center, ellipse cover, #b3dced 0%, #29b8e5 50%, #bce0ee 100%);  FF3.6-15 
+    background: -webkit-radial-gradient(center, ellipse cover, #b3dced 0%,#29b8e5 50%,#bce0ee 100%);  Chrome10-25,Safari5.1-6 
+    background: radial-gradient(ellipse at center, #b3dced 0%,#29b8e5 50%,#bce0ee 100%);  W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#bce0ee',GradientType=1 );  IE6-9 fallback on horizontal gradient */
+    min-height: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#head
+{
+
+    width: 1100px;
+    min-height: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+}
+#head p
+{
+    font-size: 40px;
+    text-align: center;
+    padding-top: 10px;
+}
+#toolbar
+{  
+    background: orangered;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+.option:hover
+{
+    background: red;
+}
+#content
+{   margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    min-height: 800px;
+    margin: 0px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 20px;
+}
+
+ol
+{
+    padding-top:0;
+    margin: 0;
+    list-style-type: none;
+    font-size: 20px;
+    height: 46px;
+    line-height: 200%;
+    display: inline-block;
+    
+}
+
+ol a
+{
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    padding-top: 5px;
+}
+
+ol > li
+{  
+    float: left;
+    width: 260px;
+    height: 50px;
+    border-right: 1px sandybrown solid;
+}
+
+
+ol > li:first-child
+{
+    border-left: 1px sandybrown solid;
+}
+
+ol > li:last-child
+{
+    margin-right: 40px;
+}
+
+ol > li:hover
+{
+    background:#cc0000;
+}
+a:focus 
+{
+	-moz-outline: none;
+	outline: none; /* CSS 3 */
+	ie-dummy: expression(this.hideFocus=true); /* IE >= 5.5 */
+}
+
+ol > li:hover > a
+{
+    color:black;
+}
+
+ol > li > ul
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 50px;
+    display: none;
+}
+
+ol > li:hover > ul
+{
+    display: block;
+}
+
+ol > li > ul > li
+{   background: #cc0000;
+    
+    position: relative;
+    z-index: 100;
+    border-top: 1px dotted black;
+}
+
+ol > li > ul > li:first-child
+{
+    margin-top: 5px;
+}
+
+ol > li > ul > li:hover
+{
+    background: orangered;
+    color: black;
+}
+
+ol > li > ul > li:hover >a
+{
+    color: black;
+    
+}
+
+table
+{
+    border: 1px sienna solid;
+    font-size: 30px;
+    width: 1045px;
+
+}
+
+tr:nth-last-of-type(2n+1)
+{
+    border: 1px sienna solid;
+    background: #818A92;
+}
+
+
+td
+{
+ border: 1px sienna solid;  
+
+}
+a
+{
+    text-decoration: none;
+    color:darkred;
+}
+
+#contentUsun
+{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+#contentDodaj
+{
+   font-size: 30px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+#kino
+{
+    color:red;
+}
+#contentWyszukaj
+{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#tab
+{
+    text-align: center;
+    margin-left: 70px;
+}
