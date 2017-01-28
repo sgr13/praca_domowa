@@ -46,10 +46,8 @@
             </div>
             <div id="contentWyszukaj">
                 <?php
-                $hostname = 'localhost';
-                $user = 'root';
-                $password = '';
-                $database = 'cinemas_db';
+                
+				require_once "connect.php";
 
                 $connettion = new mysqli($hostname, $user, $password, $database);
                 if ($connettion->error) {

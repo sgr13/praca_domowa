@@ -10,12 +10,8 @@
 
     <body>
         <div id="container">
-            <li><a href="kinaPokaz_wszystko.php">Pokaż Kina</a></li>
-            <li><a href="kinaDodaj.php">Dodaj Kino</a></li>
-            <li><a href="seansPokaz_wszystko.php">Pokaż Seans</a></li>
-            <li><a href="seansDodaj.php">Dodaj Seans</a></li>
-            <li><a href="kinaWyszukaj.php">Wyszukaj Kino</a></li>
-            <div id="head">
+		
+			<div id="head">
                 <p>Panel Administratora</p>
             </div>
 
@@ -51,7 +47,7 @@
             <div id="contentDodaj">
                 <?php
                 
-				require_once(connect.php);
+				require_once "connect.php";
 
                 $connettion = new mysqli($hostname, $user, $password, $database);
                 if ($connettion->error) {
