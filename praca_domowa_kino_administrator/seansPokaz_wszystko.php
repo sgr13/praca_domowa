@@ -46,10 +46,8 @@
             </div>
             <div id="content">
                 <?php
-                $hostname = 'localhost';
-                $user = 'root';
-                $password = 'coderslab';
-                $database = 'cinemas_db';
+                
+				require_once "connect.php";
 
                 $connettion = new mysqli($hostname, $user, $password, $database);
                 if ($connettion->error) {
@@ -92,13 +90,21 @@
                         echo "<th>Tytuł</th><th>Opis</th><th>Usuń</th>";
                         echo "</tr>";
                         foreach ($ready as $value) {
-
+							$id = $value['id'];
+							
                             echo "<tr>";
-                            echo "<td>" . $value['name'] . "</td><td>" . $value['opis'] . "</td><td>"
-                            . "<a href = 'usun.php?id=18&table=Seans'>Usuń</a></th>";
+                            echo "<td>" . $value['name'] . "</td><td>" . $value['opis'] . "</td><td>";
+							$sql = "SELECT * FROM Seans WHERE kino_id=$kinoId AND film_id=$id";
+							$ready2 = $connettion->query($sql);
+							foreach ($ready2 as $value) {
+								$idSeans = $value['id'];
+								echo "<a href = 'usun.php?id=$idSeans&table=Seans'>Usuń</a></th>";
+								break;
+							}
                             echo "</tr>";
                         }
                         echo "</table>";
+						echo $idSeans;
                     }
                 }
                 $connettion->close();

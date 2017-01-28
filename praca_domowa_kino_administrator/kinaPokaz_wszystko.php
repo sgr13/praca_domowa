@@ -46,10 +46,8 @@
             </div>
             <div id="content">
                 <?php
-                $hostname = 'localhost';
-                $user = 'root';
-                $password = 'coderslab';
-                $database = 'cinemas_db';
+                
+				require_once "connect.php";
 
                 $connettion = new mysqli($hostname, $user, $password, $database);
                 if ($connettion->error) {

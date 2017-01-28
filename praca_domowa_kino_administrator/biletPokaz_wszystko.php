@@ -48,7 +48,7 @@
                 <?php
                 $hostname = 'localhost';
                 $user = 'root';
-                $password = 'coderslab';
+                $password = '';
                 $database = 'cinemas_db';
 
                 $connettion = new mysqli($hostname, $user, $password, $database);
